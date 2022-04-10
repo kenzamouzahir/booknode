@@ -6,7 +6,7 @@ import Login from './components/Login/Login';
 import Signin from './components/Signin/Signin';
 import Books from'./components/Bookdetails/Books';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Slick from './components/Body/Slick';
+
 
 
 function App() {

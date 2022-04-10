@@ -5,7 +5,6 @@ import { AiOutlineRead } from "react-icons/ai";
 import { AiOutlineBook } from "react-icons/ai";
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { AiOutlinePlus } from "react-icons/ai";
-import Slick from './Slick';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -25,70 +24,57 @@ function Body() {
 
     <div>
     <div className='  w-full absolute shadow-lg hidden lg:block '>
-      <img src="bgi.jpg" className='absolute' />
+      <img src="library-with-books.jpg" className='absolute' />
       <div className='m-12 grid grid-cols-[85px_3fr_1fr] p-2 
-                  bg-white mt-80  z-10 max-h-max relative'>
+                  bg-white mt-80  z-10  max-h-max relative'>
         {/* row */}
 
         <div className='   top-7 relative '>
-
-          <Link to="/books">
+          <Link to="/books" state={{ from: 1 }}>
             <img src=" ecoute_jolie_marcia.jpg"
               alt="ecoute jolie marcia"
-              mclassName='mb-2 border-b-2 shadow-boxshadow shadow-md ' />
+              className='mb-2 border-b-2 shadow-boxshadow shadow-md ' />
+             
           </Link>
-          <Link to="/books">
+          <Link to="/books" state={{ from: 2 }}>
             <img src="from_blood_and_ash_tome_1_le_sang_et_la_cendre.jpg"
               alt="le sang et la cendre"
               className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
           </Link>
-          <Link to="/books">
+          <Link to="/books" state={{ from: 3 }}>
             <img src="katel_des_forestieres.jpg"
               alt="katel des forestieres"
               className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
           </Link>
-          <Link to="/books">
+          <Link to="/books" state={{ from: 4 }}>
             <img src="apprends_dhier.png"
               alt="apprend d'hier"
               className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
           </Link>
-          <Link className=''
-            to="/books">
+          <Link to="/books" state={{ from: 5 }}>
             <img src="yakuzas_tome_1_mort_cruelle.jpg" alt="mort cruelle" className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
           </Link>
-          <Link to="/books">
+          <Link to="/books" state={{ from: 6 }}>
             <img src="treize_raisons.jpg"
               alt="treize raison"
               className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
           </Link>
-          <Link className=''
-            to="/books">
+          <Link to="/books" state={{ from: 7 }}>
             <img src="mortelle_adele_tome_18_toi_je_te_zut.jpg"
               alt="mortelle adele tome 18 toi je te zut"
               className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
           </Link>
-          <Link className=''
-            to="/books">
+          <Link to="/books" state={{ from: 8 }}>
             <img src="la_mariee_au_collier_rouge.jpg"
               alt="la mariee au collier rouge"
               className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
           </Link>
-          <Link to="/books">
+          <Link to="/books" state={{ from: 9 }}>
             <img src="le_monde_selon_garp.jpg"
               alt="le monde selon garp"
               className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
           </Link>
-          <Link to="/books">
-            <img src="harry_potter_tome_1_harry_potter_a_lecole_des_sorciers.png"
-              alt="harry potter a lecole des sorciers"
-              className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
-          </Link>
-          <Link to="/books">
-            <img src="la_ou_commence_la_fin_du_monde.jpg"
-              alt="la ou commence la fin du monde"
-              className=' mb-2 border-b-2 shadow-boxshadow shadow-md' />
-          </Link>
-
+          
 
 
         </div>
@@ -814,7 +800,43 @@ function Body() {
             </div>
           </div>
           {/*operation lire avant tout le monde */}
-          <Slick/>
+          <div className='mb-8 shadow-boxshadow shadow-md rounded-md '>
+            <div className='bg-another-one-100 px-2 py-2 text-white rounded-t-md p-4'>
+              <h3>Opération "Lire avant tout le monde"</h3>
+
+            </div>
+
+            <div className='p-4 '>{/*Body carousel */}
+              <div>{/*affichage des livres*/}
+                <div className='flex overflow-x-auto'>{/*regroupement des livres*/}
+                  <div className='p-2'>
+                    <img src="img-1.jpg" alt="" srcset="" className='shadow-boxshadow shadow-md ' />
+                  </div>
+                  <div className='p-2'>
+                    <img src="img-1.jpg" alt="" srcset="" className='shadow-boxshadow shadow-md' />
+                  </div>
+                  <div className='p-2'>
+                    <img src="img-1.jpg" alt="" srcset="" className='shadow-boxshadow shadow-md ' />
+                  </div>
+                  <div className='p-2'>
+                    <img src="img-1.jpg" alt="" srcset="" className='shadow-boxshadow shadow-md' />
+                  </div>
+                  <div className='p-2'>
+                    <img src="img-1.jpg" alt="" srcset="" className='shadow-boxshadow shadow-md' />
+                  </div>
+                  <div className='p-2'>
+                    <img src="img-1.jpg" alt="" srcset="" className='shadow-boxshadow shadow-md' />
+                  </div>
+                  <div className='p-2'>
+                    <img src="img-1.jpg" alt="" srcset="" className='shadow-boxshadow shadow-md' />
+                  </div>
+                 
+                </div>
+
+               
+              </div>
+            </div>
+          </div>
         </div>
 
 
