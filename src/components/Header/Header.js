@@ -20,16 +20,17 @@ function Header() {
 
         <div className=" absolute l-0 top-0 h-16 l-0 w-80 " >
           <Link to="/">
-            <img src="logo_icon-half2.png" className='absolute left-48 top-px  ' alt="logoback" />
+            <img src="/logo_icon-half2.png" className='absolute left-48 top-px  ' alt="logoback" />
           </Link>
         </div>
         <div className=' h-24 relative min-h-0 pr-5 pl-5 container
      flex flex-wrap justify-between items-center mx-auto w-4/5'>
           <div className="flex items-center ">
-            <Link to="/"><img src="logo_header-booknode.png" className="relative top-5 z-10" alt="booknodeLogo" />
+            <Link to="/">
+              <img src="/logo_header-booknode.png" className="relative top-5 z-10" alt="booknodeLogo" />
             </Link>
             <Link to="/">
-              <img src="direction-cinenode.png" className="relative top-6  " alt="booknodeLogo2" />
+              <img src="/direction-cinenode.png" className="relative top-6  " alt="booknodeLogo2" />
             </Link>
           </div>
 
